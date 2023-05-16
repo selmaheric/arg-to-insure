@@ -1,0 +1,572 @@
+body {
+    background: rgb(204,204,204);
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    width: 8.5in;
+    height: 14in;
+}
+
+/* FONTS */
+
+.font-8 {
+    font-size: 8px;
+}
+
+.font-9 {
+    font-size: 9px;
+}
+
+.font-10 {
+    font-size: 10px;
+}
+
+.font-11 {
+    font-size: 11px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.fw-bold {
+    font-weight:700!important;
+}
+
+.fw-bolder {
+    font-weight:bolder!important;
+}
+
+/* Colors */
+
+.color-white {
+    color: white;
+}
+
+.color-red {
+    color: #FF1205;
+
+}
+
+.background-red {
+    background-color: #FF1205;
+
+}
+
+.background-black {
+    background-color: black;
+
+}
+
+/* Border */
+
+.border-top {
+    border-top: 1px solid black;
+}
+
+.border-bottom {
+    border-bottom: 1px solid black;
+}
+
+.border-left {
+    border-left: 1px solid black;
+}
+
+.border-right {
+    border-right: 1px solid black;
+}
+
+/* Padding */
+
+.ps-1 {
+    padding-left:.25rem!important;
+}
+
+.ps-2 {
+    padding-left:.5rem!important;
+}
+
+.ps-4 {
+    padding-left:1.5rem!important;
+}
+
+.ps-5 {
+    padding-left:3rem!important;
+}
+
+.pe-1 {
+    padding-right:.25rem!important;
+}
+
+.pe-2 {
+    padding-right:.5rem!important;
+}
+
+.pe-3 {
+    padding-right:1rem!important;
+}
+
+.pe-4 {
+    padding-right:1.5rem!important;
+}
+
+.pe-5 {
+    padding-right:3rem!important;
+}
+
+.pt-1 {
+    padding-top:.25rem!important;
+}
+
+.pt-2 {
+    padding-top:.5rem!important;
+}
+
+.pt-3 {
+    padding-top:1rem!important;
+}
+
+.pt-4 {
+    padding-top:1.5rem!important;
+}
+
+.pt-5 {
+    padding-top:3rem!important;
+}
+
+.pb-3 {
+    padding-bottom:1rem!important;
+}
+
+.pb-4 {
+    padding-bottom:1.5rem!important;
+}
+
+.py-1 {
+    padding-top:.25rem!important;
+    padding-bottom:.25rem!important
+}
+
+.py-2 {
+    padding-top:.5rem!important;
+    padding-bottom:.5rem!important
+}
+
+.px-4 {
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+}
+
+/* Margin */
+
+.mt-1 {
+    margin-top:.25rem!important;
+}
+
+.mt-2 {
+    margin-top:.5rem!important;
+}
+
+.mt-3 {
+    margin-top: 1rem!important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem!important;
+}
+
+.mt-5 {
+    margin-top: 3rem!important;
+}
+
+.mt-auto {
+    margin-top: auto!important;
+}
+
+.mb-1 {
+    margin-bottom:.25rem!important;
+}
+
+.mb-2 {
+    margin-bottom:.5rem!important;
+}
+
+.mb-4 {
+    margin-bottom:1.5rem!important;
+}
+
+.mb-5 {
+    margin-bottom:3rem!important;
+}
+
+.mx-1 {
+    margin-left: .25rem!important;
+    margin-right: .25rem!important;
+}
+
+.mx-2 {
+    margin-left: .5rem!important;
+    margin-right: .5rem!important;
+}
+
+.ms-1 {
+    margin-left: .25rem!important;
+}
+
+.ms-3 {
+    margin-left:1rem!important;
+}
+
+.ms-4{
+    margin-left:1.5rem!important;
+}
+
+.me-1 {
+    margin-right: .25rem!important;
+}
+
+.me-2 {
+    margin-right: .5rem!important;
+}
+
+.me-4 {
+    margin-right: 1.5rem!important;
+}
+
+.me-5 {
+    margin-right: 3rem!important;
+}
+
+
+/* Flex */
+
+.d-flex {
+    display: flex!important;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-10 {
+    flex: 10;
+}
+
+.flex-16 {
+    flex: 16;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex-grow:1!important;
+}
+
+.col-1 {
+    flex:0 0 auto;
+    width:8.33333333%
+}
+
+.col-2 {
+    flex:0 0 auto;
+    width:16.6666666667%
+}
+
+.col-3 {
+    flex:0 0 auto;
+    width:25%;
+}
+
+.col-4 {
+    flex:0 0 auto;
+    width:33.33333333%;
+}
+
+.col-5 {
+    flex:0 0 auto;
+    width: 41.66666667%;
+}
+
+.col-6 {
+    flex:0 0 auto;
+    width:50%;
+}
+
+.col-9 {
+    flex:0 0 auto;
+    width:75%;
+}
+
+.col-10 {
+    flex:0 0 auto;
+    width: 83.3333333333%;
+}
+
+
+.col-11 {
+    flex:0 0 auto;
+    width:91.66666667%;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content:space-between!important;
+}
+
+.text-center{
+    text-align:center!important;
+}
+
+.text-end {
+    text-align:right!important;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+/* Bottom Line */
+
+.line-1 {
+    width: 2.5rem;
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 12px;
+}
+
+.line-2 {
+    width: 5rem;
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 12px;
+}
+
+.line-3 {
+    width: 6rem;
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 12px;
+}
+
+.line-4 {
+    width: 7rem;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.line-max {
+    border-bottom: 1px solid black;
+    flex-grow: 1;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    text-align: center;
+    height: 12px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* Custom */
+
+.pageOne {
+    padding-left: 12px;
+    padding-right: 30px;
+}
+
+.pageOne .header .title {
+    color: #E96173
+}
+
+.pageOne .firstPart .left {
+    flex: 5;
+    padding-left: 10px;
+}
+
+.pageOne .firstPart .right {
+    flex: 6;
+    padding-left: 15px;
+}
+
+.pageOne .secondPart .left {
+    flex: 5;
+}
+
+.pageOne .secondPart .left .section {
+    padding-left: 5px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.pageOne .secondPart .section .wordSpacing {
+    word-spacing: 4px;
+    text-align: justify;
+}
+
+.pageOne .secondPart .left .section-last {
+    padding-left: 5px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.pageOne .secondPart .right {
+    flex: 7;
+    border-left: 1px solid black;
+}
+
+.pageOne .secondPart .info {
+    padding-left: 42px;
+}
+
+.pageOne .secondPart .tableData {
+    margin-left: -0.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageOne .secondPart .tableData .topTitle {
+    background-color: red;
+    height: 16px;
+    width: 100%;
+    color: white;
+}
+
+.pageOne .secondPart .tableData .redTable {
+    display: flex;
+    width: 100%;
+    flex: 1 1 1px;
+}
+
+.pageOne .secondPart .tableData .redTable span {
+    padding-left: .5rem;
+}
+
+.pageOne .secondPart .tableData .leftTitle {
+    background-color: red;
+    color: white;
+}
+
+.pageOne .secondPart .leftTitle .vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    padding-left: 0!important;
+}
+
+.pageOne .secondPart .tableData .redTable .hourlyTable > div {
+    border-bottom: 1px solid black;
+    height: 13px;
+}
+
+.pageOne .secondPart .tableData .redTable .hourlyTable > div >div {
+    border-right: 1px solid black;
+}
+
+.pageOne .secondPart .tableData .redTable .packingTable > div {
+    border-bottom: 1px solid black;
+    height: 13px;
+}
+
+.pageOne .secondPart .tableData .redTable .packingTable > div >div {
+    border-right: 1px solid black;
+}
+
+.pageOne .blackTable > div {
+    border-bottom: 1px solid black;
+    height: 13px;
+}
+
+.pageOne .blackTable > div >div {
+    border-right: 1px solid black;
+}
+
+.pageOne .secondPart .tableData .oneCell {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.pageOne .secondPart .tableData .footer .totalPackingCharges {
+    height: 24px;
+}
+
+.pageTwo .container {
+    padding-right: 140px;
+}
+
+.pageTwo .section {
+    margin-top: 15px;
+}
+
+.pageTwo .section .sectionData {
+    padding-left: 30px;
+}
+
+
+.pageThree .container {
+    padding-right: 140px;
+}
+
+.pageThree .container-2 {
+    padding-right: 110px;
+}
+
+hr {
+    background-color: black;
+    height: 0.5px !important;
+    border: none;
+    opacity: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+}

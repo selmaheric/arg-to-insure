@@ -360,8 +360,20 @@ body {
     align-items: center;
 }
 
+.align-self-end {
+    align-self: end;
+}
+
 .justify-content-between {
     justify-content:space-between!important;
+}
+
+.justify-content-center {
+    justify-content:center!important;
+}
+
+.text-start{
+    text-align:start!important;
 }
 
 .text-center{
@@ -420,148 +432,6 @@ body {
 
 /* Custom */
 
-.pageOne {
-    padding-left: 12px;
-    padding-right: 30px;
-}
-
-.pageOne .header .title {
-    color: #E96173
-}
-
-.pageOne .firstPart .left {
-    flex: 5;
-    padding-left: 10px;
-}
-
-.pageOne .firstPart .right {
-    flex: 6;
-    padding-left: 15px;
-}
-
-.pageOne .secondPart .left {
-    flex: 5;
-}
-
-.pageOne .secondPart .left .section {
-    padding-left: 5px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-}
-
-.pageOne .secondPart .section .wordSpacing {
-    word-spacing: 4px;
-    text-align: justify;
-}
-
-.pageOne .secondPart .left .section-last {
-    padding-left: 5px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.pageOne .secondPart .right {
-    flex: 7;
-    border-left: 1px solid black;
-}
-
-.pageOne .secondPart .info {
-    padding-left: 42px;
-}
-
-.pageOne .secondPart .tableData {
-    margin-left: -0.5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.pageOne .secondPart .tableData .topTitle {
-    background-color: red;
-    height: 16px;
-    width: 100%;
-    color: white;
-}
-
-.pageOne .secondPart .tableData .redTable {
-    display: flex;
-    width: 100%;
-    flex: 1 1 1px;
-}
-
-.pageOne .secondPart .tableData .redTable span {
-    padding-left: .5rem;
-}
-
-.pageOne .secondPart .tableData .leftTitle {
-    background-color: red;
-    color: white;
-}
-
-.pageOne .secondPart .leftTitle .vertical {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    text-transform: uppercase;
-    padding-left: 0!important;
-}
-
-.pageOne .secondPart .tableData .redTable .hourlyTable > div {
-    border-bottom: 1px solid black;
-    height: 13px;
-}
-
-.pageOne .secondPart .tableData .redTable .hourlyTable > div >div {
-    border-right: 1px solid black;
-}
-
-.pageOne .secondPart .tableData .redTable .packingTable > div {
-    border-bottom: 1px solid black;
-    height: 13px;
-}
-
-.pageOne .secondPart .tableData .redTable .packingTable > div >div {
-    border-right: 1px solid black;
-}
-
-.pageOne .blackTable > div {
-    border-bottom: 1px solid black;
-    height: 13px;
-}
-
-.pageOne .blackTable > div >div {
-    border-right: 1px solid black;
-}
-
-.pageOne .secondPart .tableData .oneCell {
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-}
-
-.pageOne .secondPart .tableData .footer .totalPackingCharges {
-    height: 24px;
-}
-
-.pageTwo .container {
-    padding-right: 140px;
-}
-
-.pageTwo .section {
-    margin-top: 15px;
-}
-
-.pageTwo .section .sectionData {
-    padding-left: 30px;
-}
-
-
-.pageThree .container {
-    padding-right: 140px;
-}
-
-.pageThree .container-2 {
-    padding-right: 110px;
-}
-
 hr {
     background-color: black;
     height: 0.5px !important;
@@ -569,4 +439,19 @@ hr {
     opacity: 1;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.pageOne {
+    padding-left: 12px;
+    padding-right: 30px;
+}
+
+.checkbox {
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 8px;"
 }

@@ -4,12 +4,12 @@
     <link rel="stylesheet" href="styles.css">
     <div class="page pageOne">
         <!--HEADER -->
-        <div class="d-flex py-2" style="font-size: 12px">
-            <div class="col-4 ps-2 d-flex" style="align-items: center">
+        <div class="d-flex py-2 font-12">
+            <div class="col-4 ps-2 d-flex align-items-center">
                 <div class="pt-3">
                     <img style="height: 50px" src="https://movez.gentlegiant.com/rpt/allmericaFinancial.png"/>
                 </div>
-                <div style="padding-left: 5px; padding-top: 10px">
+                <div class="ps-3 pt-3">
                     ALLMERICA FINANCIAL®
                     <hr/>
                     HANOVER INSURANCE®
@@ -18,77 +18,64 @@
             <div class="col-5 pt-1">
             </div>
             <div class="col-3 text-end">
-                <div class="d-flex" style="height: 30px; border-top: 1px solid black; border-left: 1px solid black">
-                    <div class="col-5" style="font-size: 8px; text-align: start; padding-left: 2px">Agreement No.</div>
-                    <!--REMOVE-->
-                    <div class="col-4" style="font-size: 10px; align-self: end; text-align: start; font-weight: bold">
-                        #112890
+                <div class="d-flex border-top border-left" style="height: 30px;">
+                    <div class="col-5 font-8 text-start ps-1">Agreement No.</div>
+                    <div class="col-4 font-10 text-start fw-bold align-self-end">
+                        {VALUE}
                     </div>
-                    <div class="col-3" style="font-size: 10px; padding-right: 10px; align-self: end; text-align: start">
+                    <div class="col-3 font-10 pe-5 text-start align-self-end">
                         #VAL
                     </div>
                 </div>
-                <div class="d-flex" style="height: 30px; border-top: 1px solid black; border-left: 1px solid black">
-                    <div class="col-5" style="font-size: 8px; text-align: start; padding-left: 2px">Date</div>
-                    <!--REMOVE-->
-                    <div class="col-4" style="font-size: 10px; align-self: end; text-align: start; font-weight: bold">
-                        5/1/2022
+                <div class="d-flex border-top border-left" style="height: 30px;">
+                    <div class="col-5 font-8 text-start ps-1">Date</div>
+                    <div class="col-4 font-10 text-start fw-bold align-self-end">
+                        {VALUE}
                     </div>
                 </div>
-                <div class="d-flex"
-                     style="height: 30px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black">
-                    <div class="col-5" style="font-size: 8px; text-align: start; padding-left: 2px">Carrier Order No.
+                <div class="d-flex border-top border-left border-bottom"
+                     style="height: 30px;">
+                    <div class="col-5 font-8 text-start ps-1">Carrier Order No.
                     </div>
-                    <!--REMOVE-->
-                    <div class="col-4" style="font-size: 10px; align-self: end; text-align: start; font-weight: bold">
-                        542Y
+                    <div class="col-4 font-10 text-start fw-bold align-self-end">
+                        {VALUE}
                     </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex" style="justify-content: center; font-weight: bold; font-size: 14px">
+        <div class="d-flex justify-content-center fw-bold font-14">
             Agreement to Insure
         </div>
-        <div class="d-flex mt-2"
-             style="justify-content: center; border-bottom: 1px solid black; margin-left: 80px; margin-right: 80px; font-weight: bold; font-size: 13px">
-            Elisabeth Abowd
-            <!--REMOVE-->
+        <div class="d-flex mt-2 justify-content-center border-bottom fw-bold"
+             style="margin-left: 80px; margin-right: 80px;">
+            {VALUE}
         </div>
-        <div class="d-flex" style="justify-content: center; font-size: 10px">(Name of customer)</div>
-        <div class="d-flex mt-1"
-             style="justify-content: center; border-bottom: 1px solid black; margin-left: 80px; margin-right: 80px; font-weight: bold; font-size: 13px">
-            Charlotte NC 28262
-            <!--REMOVE-->
+        <div class="d-flex justify-content-center font-10">(Name of customer)</div>
+        <div class="d-flex mt-1 justify-content-center border-bottom fw-bold font-13"
+             style="margin-left: 80px; margin-right: 80px;">
+            {VALUE}
         </div>
-        <div class="d-flex" style="justify-content: center; font-size: 10px">(Mailing address of customer)</div>
+        <div class="d-flex justify-content-center font-10">(Mailing address of customer)</div>
         <!--TEXT -->
-        <div style="margin-left: 80px; margin-right: 80px; margin-top: 15px; font-size: 13px; display: inline-block">
-            <span style="border-bottom: 1px solid black; padding-left: 70px; padding-right: 70px; font-weight: bold">Gentle Giant Moving Company, Inc</span>
+        <div class="font-13 mt-3 inline-block" style="margin-left: 80px; margin-right: 80px;">
+            <span class="border-bottom fw-bold" style="padding-left: 70px; padding-right: 70px;">Gentle Giant Moving Company, Inc</span>
             agrees to include the above named customer as an insured for coverage on one
-            <div style="border: 2px solid black;
-                width: 15px;
-                height: 15px;
-                text-align: center;
-                display: inline-block;
-                margin-left: 30px;
-                font-size: 8px;">X
+            <div class="checkbox">
+                X
+                <!--Leave "X" value (line above) here if you want to have it checked, if not remove it-->
             </div>
             shipment or
-            <div style="border: 2px solid black;
-                width: 15px;
-                height: 15px;
-                text-align: center;
-                display: inline-block;
-                margin-left: 30px;
-                font-size: 8px;">X
+            <div class="checkbox">
+                X
+                <!--Leave "X" value (line above) here if you want to have it checked, if not remove it-->
             </div>
             lot in storage as designated below, under and subject to the terms and conditions of policy
             number
-            <div style="border-bottom: 1px solid black; width: 200px; display: inline-block; text-align: center; font-weight: bold">
+            <div class="border-bottom fw-bold text-center inline-block" style="width: 200px;">
                 IHN 7227067
             </div>
             issued to
-            <span style="border-bottom: 1px solid black; padding-left: 50px; padding-right: 50px; margin-left: 5px; margin-right: 5px; font-weight: bold">
+            <span class="border-bottom fw-bold ms-1 me-1" style="padding-left: 50px; padding-right: 50px">
                 Gentle Giant Moving Company, Inc.
             </span>
             by Hanover Insurance Comapany, 100 North Parkway,
@@ -107,39 +94,31 @@
                 <div class="col-9">
                     <div>DECLARED VALUE AND AMOUNT OF INSURANCE</div>
                     <div>
-                        <div style="border: 2px solid black;
-                            width: 15px;
-                            height: 15px;
-                            text-align: center;
-                            display: inline-block;
-                            margin-left: 30px;
-                            font-size: 8px;">X
+                        <div class="checkbox">
+                            X
+                        <!--Leave "X" value (line above) here if you want to have it checked, if not remove it-->
                         </div>
                         "Actual Cash Value" (Depreciated Value); or
                     </div>
                     <div>
-                        <div style="border: 2px solid black;
-                            width: 15px;
-                            height: 15px;
-                            text-align: center;
-                            display: inline-block;
-                            margin-left: 30px;
-                            font-size: 8px;">X
+                        <div class="checkbox">
+                            X
+                            <!--Leave "X" value (line above) here if you want to have it checked, if not remove it-->
                         </div>
                         "Full Replacement Cost"
                     </div>
                     <div>Note: Insurer's (and Gentle Giant's) right to repair applies to both valuations</div>
                 </div>
                 <div class="col-3">
-                    <div class="d-flex" style="font-weight: bold">
+                    <div class="d-flex fw-bold">
                         <div class="col">TRANSIT:</div>
-                        <div class="col ms-3" style="border-bottom: 1px solid black; width: 150px; text-align: end">$
-                            15,000
+                        <div class="col ms-3 border-bottom text-end" style="width: 150px;">$
+                            {VALUE}
                         </div>
                     </div>
-                    <div class="d-flex" style="font-weight: bold">
+                    <div class="d-flex fw-bold">
                         <div class="col">STORAGE:</div>
-                        <div class="col ms-3" style="width: 150px; text-align: end">$ 20,000</div>
+                        <div class="col ms-3 text-end" style="width: 150px;">$ {VALUE}</div>
                     </div>
                 </div>
             </div>
@@ -148,156 +127,146 @@
             </div>
             <div class="d-flex">
                 <div class="col-10">
-                    We will pay <span style="border-bottom: 1px solid black">NO CLAIM</span> unless the adjusted "loss"
+                    We will pay <span class="border-bottom">NO CLAIM</span> unless the adjusted "loss"
                     exceeds
                 </div>
-                <div class="col-2" style="border-bottom: 1px solid black; text-align: end; font-weight: bold">
+                <div class="col-2 border-bottom text-end fw-bold">
                     $ 0
                 </div>
             </div>
         </div>
-        <div style="border-bottom: 1px solid black; border-top: 1px solid black; font-size: 14px; margin-top: 5px">
+        <div class="border-bottom border-top font-14 mt-1 ms-3 me-3">
             <span>PROPERTY DESCRIPTION:</span>
             <span>{value}
             <br/><br/>
             </span>
         </div>
-        <div style="margin-left: 80px; margin-right: 80px; margin-top: 10px; font-size: 13px">
+        <div class="font-13 mt-2" style="margin-left: 80px; margin-right: 80px;">
             <div class="d-flex">
-                <div style="padding-right: 10px">To Be</div>
-                <div style="border: 2px solid black;
-                width: 15px;
-                height: 15px;
-                text-align: center;
-                display: inline-block;
-                font-size: 8px;">X
+                <div class="pe-1">To Be</div>
+                <div class="checkbox">X
                 </div>
                 <div style="padding-left: 10px; margin-right: 10px">Shipped via</div>
-                <div style="border-bottom: 1px solid black; font-weight: bold; display: inline-block; flex-grow: 1; padding-left: 10px">
+                <div class="border-bottom fw-bold flex-grow-1 ps-2 inline-block">
                     Gentle Giant Moving Company, Inc.
                 </div>
             </div>
             <div class="d-flex">
-                <div style="padding-right: 10px">To Be</div>
-                <div style="border: 2px solid black;
-                width: 15px;
-                height: 15px;
-                text-align: center;
-                display: inline-block;
-                font-size: 8px;">X
+                <div class="pe-1">To Be</div>
+                <div class="checkbox">X
                 </div>
-                <div style="padding-left: 10px; margin-right: 10px">Stored At</div>
-                <div style="border-bottom: 1px solid black; font-weight: bold; display: inline-block; flex-grow: 1; padding-left: 10px">
+                <div class="ps-2 me-2">Stored At</div>
+                <div class="border-bottom fw-bold flex-grow-1 ps-2 inline-block">
                     Gentle Giant Moving Company, Inc.
                 </div>
             </div>
-            <div style="text-decoration: underline">TRANSIT</div>
+            <div class="text-underline">TRANSIT</div>
             <div class="d-flex">
-                <div style="padding-right: 10px">FROM (City and State)</div>
-                <div style="border-bottom: 1px solid black; font-weight: bold; display: inline-block; flex-grow: 1; padding-left: 10px">
-                    CHARLOTTE, NC
+                <div class="pe-2">FROM (City and State)</div>
+                <div class="border-bottom fw-bold flex-grow-1 ps-2 inline-block">
+                    {VALUE}
                 </div>
             </div>
             <div class="d-flex">
-                <div style="padding-right: 10px">TO (City and State)</div>
-                <div style="border-bottom: 1px solid black; font-weight: bold; display: inline-block; flex-grow: 1; padding-left: 10px">
-                    CHARLOTTE, NC
+                <div class="pe-2">TO (City and State)</div>
+                <div class="border-bottom fw-bold flex-grow-1 ps-2 inline-block">
+                    {VALUE}
                 </div>
             </div>
-            <div style="text-decoration: underline">STORAGE</div>
+            <div class="text-underline">STORAGE</div>
             <div class="d-flex">
-                <div style="padding-right: 10px">FROM (First Day of Storage) </div>
-                <div style="flex-grow: 1; text-align: center">
-                    <div style="width: 100%; border-bottom: 1px solid black">3/12/2022</div>
-                    <div style="font-size: 10px">(Month, Day and Year)</div>
+                <div class="pe-2">FROM (First Day of Storage) </div>
+                <div class="flex-grow-1 text-center">
+                    <div class="border-bottom" style="width: 100%; height: 12px"></div>
+                    <div class="font-10">(Month, Day and Year)</div>
                 </div>
             </div>
             <div class="d-flex">
-                <div style="padding-right: 10px">TO (First Day of Storage) </div>
-                <div style="flex-grow: 1; text-align: center">
-                    <div style="width: 100%; border-bottom: 1px solid black">3/12/2022</div>
-                    <div style="font-size: 10px">(Month, Day and Year)</div>
+                <div class="pe-2">TO (First Day of Storage) </div>
+                <div class="flex-grow-1 text-center">
+                    <div class="border-bottom" style="width: 100%; height: 12px"></div>
+                    <div class="font-10">(Month, Day and Year)</div>
                 </div>
             </div>
         </div>
-        <div class="d-flex" style="font-size: 14px">
-            <div class="col-2" style="font-weight: bold">Transit Premium:</div>
-            <div class="col-2" style="border-bottom: 1px solid black; text-align: end">${value}</div>
+        <div class="d-flex font-14">
+            <div class="col-2 fw-bold">Transit Premium:</div>
+            <div class="col-2 border-bottom text-end">${value}</div>
         </div>
-        <div class="d-flex" style="font-size: 14px">
-            <div class="col-2" style="font-weight: bold">Storage Premium:</div>
-            <div class="col-2" style="text-align: end">${value}</div>
+        <div class="d-flex font-14">
+            <div class="col-2 fw-bold">Storage Premium:</div>
+            <div class="col-2 text-end">${value}</div>
         </div>
-        <div class="d-flex" style="font-size: 14px">
-            <div class="col-2" style="font-weight: bold">Total Premium:</div>
-            <div class="col-2" style="text-align: end">${value}</div>
+        <div class="d-flex font-14">
+            <div class="col-2 fw-bold">Total Premium:</div>
+            <div class="col-2 text-end">${value}</div>
         </div>
-        <div class="d-flex mt-5" style=" font-size: 10px">
+        <div class="d-flex mt-5 font-10">
             <div class="col-6">
-                <div style="border-bottom: 2px solid black; height: 15px"></div>
-                <div style="text-align: center">
+                <div class="border-bottom" style="height: 15px"></div>
+                <div class="text-center">
                     (Signature of Shipper)
                 </div>
             </div>
             <div class="col-5">
                 <div class="d-flex ms-3">
                     <div>Date</div>
-                    <div class="flex-grow-1" style="border-bottom: 2px solid black; height: 15px"></div>
+                    <div class="flex-grow-1 border-bottom" style="height: 15px"></div>
                 </div>
             </div>
             <div class="col-1">
                 <div class="d-flex ms-3">
                     <div>20</div>
-                    <div class="flex-grow-1" style="border-bottom: 2px solid black; height: 15px"></div>
+                    <div class="flex-grow-1 border-bottom" style="height: 15px"></div>
                 </div>
             </div>
         </div>
-        <div class="d-flex mt-3" style=" font-size: 10px">
+        <div class="d-flex mt-3" style="font-size: 10px">
             <div class="col-6">
-                <div style="border-bottom: 2px solid black; height: 15px"></div>
-                <div style="text-align: center">
+                <div class="border-bottom" style="height: 15px"></div>
+                <div class="text-center">
                     (Signature of Carrier)
                 </div>
             </div>
             <div class="col-5">
                 <div class="d-flex ms-3">
                     <div>Date</div>
-                    <div class="flex-grow-1" style="border-bottom: 2px solid black; height: 15px"></div>
+                    <div class="flex-grow-1 border-bottom" style="height: 15px"></div>
                 </div>
             </div>
             <div class="col-1">
                 <div class="d-flex ms-3">
                     <div>20</div>
-                    <div class="flex-grow-1" style="border-bottom: 2px solid black; height: 15px"></div>
+                    <div class="flex-grow-1 border-bottom" style="height: 15px"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="page pageTwo">
-        <div style="font-size: 10px; padding-top: 30px">
-            <div class="d-flex" style="justify-content: center;">
+    <div class="page">
+        <div class="font-10 pt-5">
+            <div class="d-flex justify-content-center">
                 Insurance provided is subject to the terms and conditions
                 of the Household
             </div>
-            <div class="d-flex" style="justify-content: center;">
+            <div class="d-flex justify-content-center">
                 Goods Cargo Portfolio policy
-                <div style="border-bottom: 1px solid black; padding-left: 30px; padding-right: 30px; font-weight: bold">
+                <div class="border-bottom ps-5 pe-5 fw-bold">
                     IHN 7227067
                 </div>
                 issued to
             </div>
 
-            <div class="d-flex" style=" justify-content: center;">
-                <div style="border-bottom: 1px solid black; font-weight: bold; padding-left: 100px; padding-right: 100px;" >
+            <div class="d-flex justify-content-center">
+                <div class="border-bottom fw-bold ps-5 pe-5">
                     Gentle Giant Moving Company, Inc
                 </div>
             </div>
-            <div  class="d-flex" style=" justify-content: center; padding-top: 10px">
+            <div  class="d-flex justify-content-center pt-2">
                 RESUME OF COVERAGE PROVIDED
             </div>
-            <div class="d-flex" style=" justify-content: center; font-size: 12px; margin-top: 10px">
+            <div class="d-flex justify-content-center font-12 mt-2">
                 <div>
-                    <span style="border-bottom: 1px solid black">The Following briefly outlines the salient features of the policy.</span>
+                    <span class="border-bottom">The Following briefly outlines the salient features of the policy.</span>
                     For
                     <br />
                     exact wording, except wording shown in quotes, refer to the
@@ -306,15 +275,15 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex" style="font-size: 12px; margin-left: 50px; margin-right: 50px; margin-top: 20px">
-            <div class="col-6" style="padding-right: 30px">
+        <div class="d-flex font-12 ms-4 me-4 mt-3">
+            <div class="col-6 pe-3">
                 <div>
                     COVERED CAUSES OF LOSS:
                 </div>
                 <div>
                     "Covered causes of Loss" means (all) risks of direct loss except for those causes of loss listed in the following exclusions.
                 </div>
-                <div style="margin-top: 20px">
+                <div class="mt-3">
                     EXCLUSIONS:
                 </div>
                 <div>
@@ -354,8 +323,8 @@
                         to piano, harpsichord, organ, television, radio, refrigerator,
                         freezer. washing machine, dryer, sound re- cording or playing
                         equipment, including parts or com- ponents thereof,
-                        electronic or mechanical game(s), <span style="text-decoration: underline">computers</span>, or like similar articles
-                        <span style="text-decoration: underline">unless </span> evidenced by external damage;"
+                        electronic or mechanical game(s), <span class="text-underline">computers</span>, or like similar articles
+                        <span class="text-underline">unless </span> evidenced by external damage;"
                         <br />
                         UNLESS THE FOLLOWING_PROPERTY IS PACKED, PACKAGED
                         OR PREPARED FOR SHIPMENT BY :THE NAMED
@@ -366,7 +335,7 @@
                         scratching, tearing or ripping of china, glass, glassware,
                         statuary, porcelain, painting, etching or print, bric-a-brac or
                         similar property of a brittle, fragile or delIicate nature,
-                        <span style="text-decoration: underline">unless</span>
+                        <span class="text-underline">unless</span>
                         loss or damage is caused directly by fire, lightning, explosion,
                         tornado, cyclone, windstorm, hail, collision, upset or overturn
                         of trans- porting conveyance, collapse of bridges, trestles,
@@ -376,7 +345,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="col-6" style="padding-left: 30px">
+            <div class="col-6 ps-4">
                 <div>
                     DUTIES IN THE EVENT OF LOSS
                 </div>
@@ -413,7 +382,7 @@
                     We will not pay for "loss'" in any one occurrence until the amount
                     of the adjusted "loss" exceeds the deductible shown in the
                     Agreement to Insure. We will then pay the amount of the
-                    adjusted "loss" in <span style="text-decoration: underline">excess</span> of the deductible, up to the declared
+                    adjusted "loss" in <span class="text-underline">excess</span> of the deductible, up to the declared
                     value and amount of insurance shown in the Agreement to
                     Insure.
                 </div>
@@ -425,7 +394,7 @@
                     which is the cost to replace with property of like kind, condition
                     and quality, at a price negotiated between a
                     willing buyer and a willing seller as of the time of "loss" or you will incur a penalty.
-                    The <span style="text-decoration: underline">penalty</span> is that we will not pay the full amount of any loss.
+                    The <span class="text-underline">penalty</span> is that we will not pay the full amount of any loss.
                     Instead, we will determine the most we will pay using the following steps:
                 </div>
                 <ol type="a">
@@ -434,7 +403,7 @@
                     </li>
                     <li>Multiply the adjusted loss, before application of the deductible, by the figure determined instep a. (above) </li>
                 </ol>
-                <div style="margin-top: 20px">
+                <div class="mt-2">
                     VALUATION
                 </div>
                 <div>
@@ -448,7 +417,7 @@
                     (c) absolescence; or (2) FRC, meaining we will pay the full cost for
                     replacing the property with substantially identical property.
                 </div>
-                <div style="margin-top: 20px">
+                <div class="mt-2">
                     NO BENEFIT TO BAILEE
                 </div>
                 <div>
